@@ -5,7 +5,7 @@ description: 'Start extracting web page data'
 
 ### Open Dashboard
 
-Navigate to [Tarsier Dashboard](http://localhost:3000/dash)
+Navigate to [Tarsier Dashboard](http://tarsier.vercel.app/dash)
 
 Create an account if you do not already have one
 
@@ -17,14 +17,14 @@ Make sure to save your key in a secure location
 
 ### Make a request
 
-Make sure to replace YOUR_API_KEY with the key generated above and YOUR_URL with any valid url
+Make sure to replace TARSIER_API_KEY with the key generated above and URL with any valid url
 
 ```curl
-curl -X POST http://localhost:8000/page-text \
+curl -X POST https://tarsier.bazzled.com/page-text \
 -H "Content-Type: application/json" \
--H "Authorization: Bearer {YOUR_API_KEY}" \
+-H "Authorization: Bearer TARSIER_API_KEY" \
 -d '{
-  "url": YOUR_URL
+  "url": "URL"
 }'
 ```
 

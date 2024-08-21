@@ -23,7 +23,8 @@
     {
       "group": "Get Started",
       "pages": [
-        "quickstart"
+        "quickstart",
+        "limits"
       ]
     },
     {
